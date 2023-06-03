@@ -89,7 +89,7 @@ class LinkedList {
     }
     console.log(str);
   }
-}
+} 
 
 var ll = new LinkedList();
 

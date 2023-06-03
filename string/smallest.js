@@ -22,6 +22,6 @@ let newstr=""
 
 newstr+=str[str.length-1]
 for(i=0;i<str.length-1;i++){
-    newstr+=str[i]
+  str+=str[i]
 }
-console.log(newstr);
+console.log(str);

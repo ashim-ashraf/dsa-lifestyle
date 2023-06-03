@@ -1,9 +1,7 @@
-
 function binarySearch(arr,key)
 {
 	let low = 0;
 	let high = arr.length - 1;
-	let mid;
 	
 	while (high - low > 1) {
 		
@@ -27,7 +25,7 @@ function binarySearch(arr,key)
 	}
 }
 arr = [ 1, 3, 4, 5, 6 ];
-let key = 1;
+let key = 5;
 binarySearch(arr, key);
 key = 6;
 binarySearch(arr, key);
