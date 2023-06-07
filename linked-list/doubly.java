@@ -25,7 +25,6 @@ public class doubly {
 			newNode.prev = tail;
 		}
 		tail = newNode;
-
 	}
 
 	public void display() {
