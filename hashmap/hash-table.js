@@ -25,6 +25,16 @@ class hashTable {
         this.dataMap[index].push([key, value])
         return this;
     }
+
+    get(key){
+        let index = this._hash(key)
+        console.log(this.dataMap[index].filter(item => item[0] == key));
+    }
+
+    delete(key){
+        let index = this._hash(key)
+        this.dataMap[index] = this.dataMap[index].filter( item => item[0] != key)
+    }
 }
 
 
@@ -34,5 +44,7 @@ myHashTable.set("tile", 50);
 myHashTable.set("lumber", 80);
 myHashTable.set("bolts", 200);
 myHashTable.set("screws", 140);
+myHashTable.get("tile")
+myHashTable.delete("tile")
 
 myHashTable.printTable();    

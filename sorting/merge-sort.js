@@ -9,7 +9,7 @@ function partition(arr){
     return merge(partition(leftArr),partition(rightArr))
 }
 
-function Merge(left, right){
+function merge(left, right){
     const sortArr = [];
     while(left.length && right.length){
         if(left[0] <= right[0]){
@@ -20,3 +20,6 @@ function Merge(left, right){
     }
     return [...sortArr,...left,...right]
 }
+
+let arr = [ 10, 7, 8, 9, 1, 5]
+console.log(partition(arr));

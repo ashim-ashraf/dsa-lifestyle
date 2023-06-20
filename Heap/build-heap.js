@@ -14,7 +14,6 @@ function heapify(arr, N, i)
 	if (r < N && arr[r] > arr[largest])
 		largest = r;
 
-
 	if (largest != i) {
 		var swap = arr[i];
 		arr[i] = arr[largest];
@@ -27,8 +26,6 @@ function heapify(arr, N, i)
 function buildHeap( arr)
 {
 	var N = arr.length;
-
-
 	for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
 		heapify(arr, N, i);
 }
@@ -41,7 +38,7 @@ function printArray(arr)
 		
 }
 
-var arr = [1, 3, 5, 4, 6,25, 13, 10, 9, 8, 15, 17];
+var arr = [1, 3, 5, 4, 6,25, 13, 10, 8, 15, 17];
 var N = arr.length;
 
 
