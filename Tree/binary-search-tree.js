@@ -14,23 +14,18 @@ function insert(data) {
 
 
 function insertRec(root, data) {
-
   if (root == null) {
     root = new Node(data);
     return root;
   }
-
-  
   if (data < root.data) root.left = insertRec(root.left, data);
   else if (data > root.data) root.right = insertRec(root.right, data);
-
   return root;
 }
 
 
 function printPostorder(node) {
   if (node == null) return;
-
   printPostorder(node.left);
   printPostorder(node.right);
   console.log(node.data + " ");
@@ -42,11 +37,7 @@ function inorder ( node ){
     inorder(node.left);
     console.log(node.data);
     inorder(node.right)
-  
-}
-
-  
-
+} 
 
 function printPreorder(node) {
   if (node == null) return;

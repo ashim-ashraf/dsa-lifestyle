@@ -1,11 +1,8 @@
-
 function sort(arr) {
     var N = arr.length;
-
-
+    
     for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
         heapify(arr, N, i);
-
 
     for (var i = N - 1; i > 0; i--) {
 
@@ -16,7 +13,6 @@ function sort(arr) {
         heapify(arr, i, 0);
     }
 }
-
 
 function heapify(arr, N, i) {
     var largest = i;
@@ -40,7 +36,6 @@ function printArray(arr) {
     var N = arr.length;
     for (var i = 0; i < N; ++i)
         console.log(arr[i] + " ");
-
 }
 
 
